@@ -3,14 +3,12 @@
     padding:0;
     box-sizing: border-box;     
 }
-
 body{
     justify-items: center;
     text-align: center;
     color:rgb(14, 44, 2)
-    
 }
-.grass-container, .water-container {  
+.grass-container, .water-container, .fire-container {  
     flex-wrap: wrap;
     width: 100%;
     min-height: 130vh; 
@@ -23,11 +21,12 @@ body{
     background-position: center;
     background-image: url('Pokemon Background/pokegrassland.gif'); /* Same for the other container */
 }
-
 .water-container {
     background-image: url('Pokemon Background/WaterType.gif');
 }
-
+.fire-container{
+    background-image: url('Pokemon Background/flamebackground.gif');
+}
 .pokemon-container
 {  
     font-weight: 100px;
@@ -43,17 +42,17 @@ body{
 .card { 
     
     border: 0.8px solid gray;
-    width:130px;
-    height:130px
+    width:150px;
+    height:150px
 }
 .card img
 {
-width: 130px;
+width: 150px;
 padding: 10;
 }
 .card :hover
 {
-   width: 140px;
+   width: 180px;
 }
 ul {
     list-style-type: none;
@@ -62,6 +61,14 @@ ul {
 {
     color: #ffffff; 
     background-color: green;
+    padding: 3px 3px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.pokemon-type-fire
+{
+    color: #ffffff; 
+    background-color: rgb(255, 81, 0);
     padding: 3px 3px;
     border-radius: 3px;
     display: inline-block;
@@ -126,6 +133,22 @@ ul {
 {
     color: #ffffff; 
     background-color: rgb(231, 97, 35);
+    padding: 3px 3px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.pokemon-type-rock
+{
+    color: #ffffff; 
+    background-color: rgb(201, 143, 77);
+    padding: 3px 3px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.pokemon-type-dark
+{
+    color: #ffffff; 
+    background-color: rgb(78, 60, 38);
     padding: 3px 3px;
     border-radius: 3px;
     display: inline-block;
